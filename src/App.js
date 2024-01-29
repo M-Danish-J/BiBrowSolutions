@@ -1,10 +1,10 @@
 import './App.css';
-import Home from './components/Home/Home';
+import Home from './pages/Home';
 function App() {
   return (
-    <div className=''>
-        <Home/>
-       </div>
+    <div className='h-[200vh]'>
+      <Home />
+    </div>
   );
 }
 
