@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Button({Text,className}) {
+export default function Button({text,className}) {
   return (
     <div>
       <button className={className}>
-        {Text}
+        {text}
       </button>
     </div>
   )

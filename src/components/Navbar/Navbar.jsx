@@ -3,15 +3,15 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import "./Navbar.css"
-import Button from '../Button/Button';
+import Button from '../Custom/Button/Button';
 
 export default function Navbar() {
 
     const [HamBurger, setHamBurger] = useState(false)
 
-    const handleToggle = () => {
-        setHamBurger(!HamBurger)
-    }
+    const closeNavbar = () => {
+        setHamBurger(false);
+    };
 
     const [Sticky, setSticky] = useState(false);
     const [Large, setLarge] = useState(false);
@@ -22,7 +22,22 @@ export default function Navbar() {
 
     const handleResize = () => {
         setLarge(window.innerWidth > 1000);
+
     }
+    const [isClosing, setIsClosing] = useState(false);
+
+    const handleToggle = () => {
+        if (HamBurger) {
+            setIsClosing(true);
+            setTimeout(() => {
+                setHamBurger(false);
+                setIsClosing(false);
+            }, 600); // Make sure this matches your CSS animation duration
+        } else {
+            setHamBurger(true);
+        }
+    };
+    
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -68,11 +83,13 @@ export default function Navbar() {
                             <Button text="Start Free Trail" className="text-white text-base font-bold px-7 py-4 bg-[#104CBA] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
                         </div>
                     </div>
-                    <div className="lg:hidden text-xl px-4 py-4 mx-10 bg-gray-100 hover:bg-black hover:text-white rounded-lg" onClick={handleToggle}>
+                    <div className="lg:hidden text-xl px-4 py-4 mx-10 bg-gray-100 hover:bg-[#283641] hover:text-white rounded-lg" onClick={handleToggle}>
                         <GiHamburgerMenu />
                     </div>
                 </div>
-                {HamBurger && <div className={`fixed max-w-xs w-5/6 md:w-2/5 top-0 bg-white lg:hidden fade-in-left border-r-4 border-[#104CBA] h-screen z-50`}>
+                {HamBurger &&
+                    <div className={`fixed inset-0 bg-black bg-opacity-60 z-40`} onClick={handleToggle}>
+                    <div className={`fixed max-w-xs w-5/6 md:w-2/5 top-0 bg-white lg:hidden ${isClosing ? 'fade-out-left' : 'fade-in-left'} border-r-4 border-[#104CBA] h-screen z-50`}> 
                     <nav className=''>
                         <div className='py-12 text-center text-white bg-[#104CBA] font-bold text-4xl cursor-pointer'>
                             BiBrow
@@ -85,14 +102,14 @@ export default function Navbar() {
                             <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Pricing</li>
                             <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Blog</li>
                         </ul>
-                        <div className="absolute -right-5 top-6 text-white px-2 py-2 rounded-full bg-black bg-opacity-60" onClick={handleToggle}>
+                        <div className="absolute -right-5 top-6 text-white px-2 py-2 rounded-full bg-[#283641] " onClick={handleToggle}>
                             <IoMdClose size={20} />
                         </div>
                     </nav>
-                </div>}
-                {
-                    HamBurger && <div onClick={handleToggle} className='lg:hidden absolute top-0 left-0 right-0 bottom-0 w-screen h-screen bg-black opacity-60 z-20'></div>
+                </div>
+                </div>
                 }
+                
             </div>
         </>
     )
