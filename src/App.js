@@ -1,4 +1,5 @@
 import './App.css';
+import AboutUs from './components/About/AboutUs';
 import Section from './components/Home/Section';
 import Home from './pages/Home';
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className=''>
       <Home />
       <Section/>
+      {/* <AboutUs/> */}
     </div>
   );
 }
