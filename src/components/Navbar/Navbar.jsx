@@ -61,7 +61,7 @@ export default function Navbar() {
                             BiBrow
                         </div>
                         <ul className={`flex items-center justify-center gap-9 font-bold text-base`}>
-                            <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Home</li>
+                            <a href='/' className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Home</a>
                             <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>About Us</li>
                             <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Service</li>
                             <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Faq</li>
@@ -89,7 +89,7 @@ export default function Navbar() {
                 </div>
                 {HamBurger &&
                     <div className={`fixed inset-0 bg-black bg-opacity-60 z-40`} onClick={handleToggle}>
-                        <div className={`fixed max-w-xs w-5/6 md:w-2/5 top-0 bg-white lg:hidden ${isClosing ? 'fade-out-left' : 'fade-in-left'} border-r-4 border-[#104CBA] h-screen z-50`}>
+                        <div className={`fixed  max-w-xs w-5/6 md:w-2/5 top-0 bg-white lg:hidden ${isClosing ? 'fade-out-left' : 'fade-in-left'} border-r-4 border-[#104CBA] h-screen z-50`}>
                             <nav className=''>
                                 <div className='py-12 text-center text-white bg-[#104CBA] font-bold text-4xl cursor-pointer'>
                                     BiBrow
