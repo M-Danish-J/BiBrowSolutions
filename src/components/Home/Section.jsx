@@ -210,7 +210,7 @@ export default function Section() {
       <div className="hidden xl:block">
       <img src={shape2} alt="" className="absolute top-[105px] left-[870px] absoluteimg " />
       </div>
-      <div className="mx-5 mt-8 md:mt-28 relative xl:w-[50%] xl:pr-4 ">
+      <div className="mx-5  h-[350px] mt-8 md:mt-28 relative xl:w-[50%] xl:pr-4 ">
         <Image image={img} className="overflow-clip" />
         <div className="flex max-w-[240px]  bg-transparent shadow-md  absolute p-4 md:bg-white md:shadow-lg md:bg-opacity-75  absolute-div">
           <div className="flex justify-center items-center gap-4">
