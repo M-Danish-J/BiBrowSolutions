@@ -1,11 +1,9 @@
 import './App.css';
-import Section from './components/Home/Section';
 import Home from './pages/Home';
 function App() {
   return (
-    <div className=''>
+    <div className='mb-[100vh]'>
       <Home />
-      <Section/>
     </div>
   );
 }

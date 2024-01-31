@@ -3,9 +3,9 @@ import React from 'react'
 export default function Paragraph({ className, title }) {
     return (
         <div>
-            <h1 className={className}>
+            <p className={className}>
                 {title}
-            </h1>
+            </p>
         </div>
     )
 }

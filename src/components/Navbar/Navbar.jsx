@@ -52,7 +52,7 @@ export default function Navbar() {
     return (
         <>
             <div className='relative'>
-                <div className={`flex items-center justify-between px-2 lg:px-16 xl:px-28 py-5 lg:py-7 border-b z-0 ${Sticky && Large ? "fixed top-0 left-0 right-0 fade-in-top bg-white" : ""}`}>
+                <div className={`flex items-center justify-between px-2 lg:px-16 xl:px-28 py-5 lg:py-7 border-b z-50 ${Sticky && Large ? "fixed top-0 left-0 right-0 fade-in-top bg-white" : ""}`}>
                     <div className='font-bold text-4xl cursor-pointer mr-16 lg:hidden'>
                         BiBrow
                     </div>
