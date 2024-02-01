@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='mb-[100vh]'>
       <Home />
-      <Section />
+      {/* <Section /> */}
       {/* <AboutUs/> */}
     </div>
   );

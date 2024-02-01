@@ -10,12 +10,12 @@ export default function TestimonialCard({ }) {
                 <div>
                     <Paragraph title="Nam venenatis vehicula orci, cursus at sapien et. Donec suscipit porta turpis non malesuada. In sit amet vestibulum" className="text-[#666F9D] px-8 text-base text-start" />
                 </div>
-                <div className="px-4 flex items-center gap-10 pt-12">
-                    <div className='w-2/5'>
+                <div className="px-2 flex items-center gap-10 pt-12">
+                    <div className='w-1/2'>
                         <img src={author} alt="img" className='h-[150px]' />
                     </div>
                     <div className='pt-8'>
-                        <p className='text-2xl font-bold'>Michael Jack</p>
+                        <p className='text-2xl font-bold leading-none'>Michael Jack</p>
                         <p className='font-normal text-sm pt-2'>Founder & CEO</p>
                     </div>
                 </div>

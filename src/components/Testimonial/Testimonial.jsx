@@ -10,17 +10,17 @@ export default function Testimonial() {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 3,
-            slidesToSlide: 2
+            slidesToSlide: 1
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 2,
-            slidesToSlide: 2
+            slidesToSlide: 1
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
             items: 1,
-            slidesToSlide: 2
+            slidesToSlide: 1
         }
     };
 
@@ -35,14 +35,14 @@ export default function Testimonial() {
 
 
     return (
-        <div className='mt-20 mx-40'>
+        <div className='mt-16 md:mt-96 xl:mt-20 sm:mx-10 lg:mx-32 xl:mx-40'>
             <div className="text-center">
                 <Button className=" bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="07 Testimonial" />
             </div>
-            <Heading className="px-52 text-[48px] mb-6 font-extrabold text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
+            <Heading className="xl:px-52 text-[48px] mb-6 font-extrabold text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
             <Carousel renderButtonGroupOutside={true}
                 draggable={true}
-                showDots={true}
+                // showDots={true}
                 // customDot={<CustomDot />}
                 swipeable={true}
                 infinite={true}
