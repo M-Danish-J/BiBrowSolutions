@@ -1,0 +1,24 @@
+.zoom-in-zoom-out {
+  animation: zoom-in-zoom-out 5s linear infinite alternate-reverse;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5) rotateY(180deg);
+  }
+  100% {
+    transform: scale(1.8, 1.8) rotateY(0deg);
+  }
+}
+.hanging {
+  animation: hanging 3s linear infinite alternate-reverse;
+}
+
+@keyframes hanging {
+  0% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-55deg);
+  }
+}
