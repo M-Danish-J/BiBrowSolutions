@@ -9,7 +9,7 @@ import './FAQsPage.css'
 
 const FAQsPage = () => {
   return (
-    <div className='flex-col flex xl:flex-row mt-32 xl:px-44 gap-20 relative'>
+    <div className='flex-col flex xl:flex-row mt-32 xl:px-44 gap-20 relative' id='faq'>
       <div className="xl:w-1/2">
         <FAQs />
       </div>

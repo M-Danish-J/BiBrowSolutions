@@ -9,9 +9,9 @@ export default function Navbar() {
 
     const [HamBurger, setHamBurger] = useState(false)
 
-    const closeNavbar = () => {
-        setHamBurger(false);
-    };
+    // const closeNavbar = () => {
+    //     setHamBurger(false);
+    // };
 
     const [Sticky, setSticky] = useState(false);
     const [Large, setLarge] = useState(false);
@@ -49,6 +49,15 @@ export default function Navbar() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+    const scrollToSection = (event, sectionId) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            targetSection.scrollIntoView({
+                behavior: 'smooth' // Smooth scrolling behavior
+            });
+        }
+    };
     return (
         <>
             <div className='relative'>
@@ -61,12 +70,12 @@ export default function Navbar() {
                             BiBrow
                         </div>
                         <ul className={`flex items-center justify-center gap-9 font-bold text-base`}>
-                            <a href='/' className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Home</a>
-                            <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>About Us</li>
-                            <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Service</li>
-                            <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Faq</li>
-                            <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Pricing</li>
-                            <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Blog</li>
+                            <li onClick={(event) => scrollToSection(event, 'hero')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Home</li>
+                            <li onClick={(event) => scrollToSection(event, 'aboutus')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>About Us</li>
+                            <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Service</li>
+                            <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Faq</li>
+                            <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Pricing</li>
+                            <li onClick={(event) => scrollToSection(event, 'blog')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Blog</li>
                         </ul>
                     </nav>
                     <div className="hidden lg:hidden md:block xl:block">
@@ -95,12 +104,12 @@ export default function Navbar() {
                                     BiBrow
                                 </div>
                                 <ul className={`flex flex-col gap-4 text-sm px-10 py-10`}>
-                                    <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Home</li>
-                                    <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>About Us</li>
-                                    <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Service</li>
-                                    <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Faq</li>
-                                    <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Pricing</li>
-                                    <li className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Blog</li>
+                                    <li onClick={(event) => scrollToSection(event, 'hero')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Home</li>
+                                    <li onClick={(event) => scrollToSection(event, 'aboutus')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>About Us</li>
+                                    <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Service</li>
+                                    <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Faq</li>
+                                    <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Pricing</li>
+                                    <li onClick={(event) => scrollToSection(event, 'blog')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Blog</li>
                                 </ul>
                                 <div className="absolute -right-5 top-6 text-white px-2 py-2 rounded-full bg-[#283641] " onClick={handleToggle}>
                                     <IoMdClose size={20} />

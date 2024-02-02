@@ -3,7 +3,7 @@ import { HiOutlineCheck } from "react-icons/hi";
 
 const Counter = () => {
     return (
-        <div className='grid sm:grid-cols-2 lg:grid-cols-3 border shadow-lg items-center justify-start gap-16 lg:gap-0 px-10 lg:px-32 py-10 sm:py-20 '>
+        <div className='bg-white grid sm:grid-cols-2 lg:grid-cols-3 border shadow-lg items-center justify-start gap-16 lg:gap-0 px-10 lg:px-32 py-10 sm:py-20 '>
             <Component finalValue={12} speed={350} symbol='M+' desc='Successful work' />
             <Component finalValue={18} speed={200} symbol='%' desc='Upgrade conversion' />
             <Component finalValue={10} speed={300} symbol='M' desc='Client Review' />
@@ -24,7 +24,7 @@ function Component({ finalValue, symbol, desc, speed }) {
         const timer = setInterval(increment, speed);
 
         return () => clearInterval(timer);
-    }, [count, finalValue]);
+    }, [count, finalValue, speed]);
 
     return (
         <div className="flex gap-4 items-center">

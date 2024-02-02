@@ -3,7 +3,7 @@ import Paragraph from '../Custom/Paragragh/Paragraph'
 import author from '../../assets/testimonial-author.png'
 import { FaQuoteRight } from "react-icons/fa";
 
-export default function TestimonialCard({ }) {
+export default function TestimonialCard() {
     return (
         <div>
             <div className=" flex flex-col justify-center border-2 shadow bg-white w-[340px] relative pt-12 rounded-md">

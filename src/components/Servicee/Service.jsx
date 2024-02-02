@@ -8,7 +8,6 @@ import serviceImg3 from '../../assets/hicon5.png'
 import serviceImg4 from '../../assets/service-triangle.png'
 import BgService from '../../assets/servicesBg.png'
 import './Service.css'
-import Counter from '../Counter/Counter'
 
 const Service = () => {
     const backgroundStyle = {
@@ -18,7 +17,7 @@ const Service = () => {
     };
     return (
         <>
-            <div className='mt-32 px-4 lg:px-20 xl:px-40 relative'>
+            <div className='mt-32 px-4 lg:px-20 xl:px-40 relative' id='service'>
                 <div className="text-center">
                     <Button className=" bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="03 Our Services" />
                 </div>
@@ -39,9 +38,7 @@ const Service = () => {
                 <p className='text-[#666F9D]'>Want to learn More about Our Services?
                     <strong className='font-extrabold text-black'>Click here</strong></p>
             </div>
-            <div className="px-4 lg:px-20 xl:px-40 ">
-                <Counter />
-            </div>
+
         </>
     )
 }

@@ -24,18 +24,18 @@ export default function Testimonial() {
         }
     };
 
-    const CustomDot = ({ onClick, index, active }) => (
-        <button
-            className={`border-white outline-blue-400 outline-2 border-4 ${active ? "bg-blue-800 outline outline-1 outline-blue-600" : "bg-gray-100"
-                } w-5 h-5 rounded-full mx-1 mt-96 `}
-            onClick={() => onClick()}
-        >
-        </button>
-    );
+    // const CustomDot = ({ onClick, index, active }) => (
+    //     <button
+    //         className={`border-white outline-blue-400 outline-2 border-4 ${active ? "bg-blue-800 outline outline-1 outline-blue-600" : "bg-gray-100"
+    //             } w-5 h-5 rounded-full mx-1 mt-96 `}
+    //         onClick={() => onClick()}
+    //     >
+    //     </button>
+    // );
 
 
     return (
-        <div className='mt-16 md:mt-96 xl:mt-20 sm:mx-10 lg:mx-32 xl:mx-40'>
+        <div className='my-16 md:mt-96 xl:mt-20 sm:mx-10 lg:mx-32 xl:mx-40'>
             <div className="text-center">
                 <Button className=" bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="07 Testimonial" />
             </div>

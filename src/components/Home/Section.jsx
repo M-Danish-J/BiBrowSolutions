@@ -5,7 +5,7 @@ import Paragraph from '../Custom/Paragragh/Paragraph'
 import Image from '../Custom/Image/Image'
 import img from '../../assets/bgHome.png'
 import icon1 from '../../assets/web-maintenance.png'
-import BgSection from  '../../assets/hero-seven-bg-1-1.png'
+import BgSection from '../../assets/hero-seven-bg-1-1.png'
 import shape1 from '../../assets/hero-shape1.png'
 import shape2 from '../../assets/hero-shape2.png'
 
@@ -14,7 +14,7 @@ export default function Section() {
 
   useEffect(() => {
     const handleResize = () => {
-      setShouldShowBackground(window.innerWidth >=  1280);
+      setShouldShowBackground(window.innerWidth >= 1280);
     };
 
     // Initial check on mount
@@ -194,55 +194,55 @@ export default function Section() {
   //   }
   return (
     <>
-    <style dangerouslySetInnerHTML={{ __html: customStyles }} />
-    <div className='xl:flex relative' style={backgroundStyle}>
-      <div className="hidden xl:block">
-      <img src={shape1} alt="" className="absolute top-[100px] left-[100px] absoluteimg " />
-      </div>
-      <div className="mt-[3.5em]  md:mt-[7em] xl:mt-[6em] md:mx-10 xl:ml-60 xl:w-[50%]   mx-5 xl:mx-0">
-        <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="01 provide Best Services" />
-        <Heading className="text-[60px] md:text-[90px] lg:text-[85px] lg:font-[900] xl:text-[90px] lg:leading-[115px] xl:leading-[95px] md:leading-[1.11em] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]" title="Big data will Come up with A Solution" />
-        <Paragraph title="Maecenas tincidunt ex quis arcu ultrices, et commodo diam
+      <style dangerouslySetInnerHTML={{ __html: customStyles }} />
+      <div className='xl:flex relative' style={backgroundStyle} id='hero'>
+        <div className="hidden xl:block">
+          <img src={shape1} alt="" className="absolute top-[100px] left-[100px] absoluteimg " />
+        </div>
+        <div className="mt-[3.5em]  md:mt-[7em] xl:mt-[6em] md:mx-10 xl:ml-60 xl:w-[50%]   mx-5 xl:mx-0">
+          <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="01 provide Best Services" />
+          <Heading className="text-[60px] md:text-[90px] lg:text-[85px] lg:font-[900] xl:text-[90px] lg:leading-[115px] xl:leading-[95px] md:leading-[1.11em] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]" title="Big data will Come up with A Solution" />
+          <Paragraph title="Maecenas tincidunt ex quis arcu ultrices, et commodo diam
         volutpat. Fusce ligula mauris, sodales" className="text-[#666F9D] mb-10 md:mb-14 text-[20px] leading-[30px] md:w-[34rem]" />
-        <Button text="Start Free Trail" className="text-white text-base font-bold px-7 py-4 bg-[#0d6efd] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
+          <Button text="Start Free Trail" className="text-white text-base font-bold px-7 py-4 bg-[#0d6efd] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
 
-      </div>
-      <div className="hidden xl:block">
-      <img src={shape2} alt="" className="absolute top-[105px] left-[870px] absoluteimg " />
-      </div>
-      <div className="mx-5  h-[350px] mt-8 md:mt-28 relative xl:w-[50%] xl:pr-4 ">
-        <Image image={img} className="overflow-clip" />
-        <div className="flex max-w-[240px]  bg-transparent shadow-md  absolute p-4 md:bg-white md:shadow-lg md:bg-opacity-75  absolute-div">
-          <div className="flex justify-center items-center gap-4">
-            {/* <i aria-hidden="true" className="flaticon flaticon-web-maintenance"></i> */}
-            <Image image={icon1} className="w-12 h-12" alt="" />
-            <div>
-              <h4 className="text-black text-xl">Game Development</h4>
-              <span></span>
+        </div>
+        <div className="hidden xl:block">
+          <img src={shape2} alt="" className="absolute top-[105px] left-[870px] absoluteimg " />
+        </div>
+        <div className="mx-5  h-[350px] mt-8 md:mt-28 relative xl:w-[50%] xl:pr-4 ">
+          <Image image={img} className="overflow-clip" />
+          <div className="flex max-w-[240px]  bg-transparent shadow-md  absolute p-4 md:bg-white md:shadow-lg md:bg-opacity-75  absolute-div">
+            <div className="flex justify-center items-center gap-4">
+              {/* <i aria-hidden="true" className="flaticon flaticon-web-maintenance"></i> */}
+              <Image image={icon1} className="w-12 h-12" alt="" />
+              <div>
+                <h4 className="text-black text-xl">Game Development</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div className="flex max-w-[260px] shadow-md bg-transparent absolute p-4 md:bg-opacity-75 md:bg-white md:shadow-lg  absolute-div1">
+            <div className="flex justify-center items-center gap-4">
+              {/* <i aria-hidden="true" className="flaticon flaticon-web-maintenance"></i> */}
+              <Image image={icon1} className="w-12 h-12" alt="" />
+              <div>
+                <h4 className="text-black text-xl">App Development</h4>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div className="flex max-w-[260px]   shadow-md  bg-transparent absolute left-0 md:bg-opacity-75 md:bg-white md:shadow-lg top-[275px] md:left-[15%] md:top-[79%] p-4 absolute-div2">
+            <div className="flex justify-center items-center gap-4">
+              {/* <i aria-hidden="true" className="flaticon flaticon-web-maintenance"></i> */}
+              <Image image={icon1} className="w-12 h-12" alt="" />
+              <div>
+                <h4 className="text-black text-xl">Web Devlopment</h4>
+                <span></span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex max-w-[260px] shadow-md bg-transparent absolute p-4 md:bg-opacity-75 md:bg-white md:shadow-lg  absolute-div1">
-          <div className="flex justify-center items-center gap-4">
-            {/* <i aria-hidden="true" className="flaticon flaticon-web-maintenance"></i> */}
-            <Image image={icon1} className="w-12 h-12" alt="" />
-            <div>
-              <h4 className="text-black text-xl">App Development</h4>
-              <span></span>
-            </div>
-          </div>
-        </div>
-        <div className="flex max-w-[260px]   shadow-md  bg-transparent absolute left-0 md:bg-opacity-75 md:bg-white md:shadow-lg top-[275px] md:left-[15%] md:top-[79%] p-4 absolute-div2">
-          <div className="flex justify-center items-center gap-4">
-            {/* <i aria-hidden="true" className="flaticon flaticon-web-maintenance"></i> */}
-            <Image image={icon1} className="w-12 h-12" alt="" />
-            <div>
-              <h4 className="text-black text-xl">Web Devlopment</h4>
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
     </>
   )
