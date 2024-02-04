@@ -8,14 +8,14 @@ import CheckPoint from '../CheckPoint/CheckPoint'
 
 export default function AboutUs() {
   return (
-    <div className="mt-[11em] md:mt-[25em] xl:flex xl:justify-center    mx-3 xl:mx-0" id='aboutus'>
+    <div className=" mt-[11em] md:mt-[25em] lg:mt-[32em] xl:mt-[14em] xl:flex xl:justify-center    mx-3 xl:ml-44" id='aboutus'>
       <div className='flex justify-center items-center xl:w[45%]'>
         <Image image={aboutusimg} className="w-full " />
       </div>
       <div className="mt-12 xl:mt-0 xl:w-[45%]">
-        <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="02 What We Do" />
+        <Button className=" bg-[#FF7A41] mb-6 lg:mb-2 lg:p-2.5 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="02 What We Do" />
         <Heading className="text-[60px] md:text-[50px] lg:text-[45px] lg:font-[900] xl:text-[55px] xl:w-[600px] 
-        lg:leading-[115px] xl:leading-[65px] md:leading-[1.11em] mb-6 lg:mb-5 font-extrabold leading-[1.4em]
+        lg:leading-[115px] xl:leading-[65px] md:leading-[1.11em] mb-6 lg:mb-3 font-extrabold leading-[1.4em]
          text-[#000F5C]" title="Relational DataBase is What We Do" />
         <Paragraph title="Maecenas tincidunt ex quis arcu ultrices, et commodo diam
         volutpat. Fusce ligula mauris, sodales Maecenas tincidunt ex quis arcu ultrices, et commodo diam

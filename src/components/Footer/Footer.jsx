@@ -2,6 +2,10 @@ import React from 'react'
 import { FaLocationDot } from "react-icons/fa6";
 import footerbg from '../../assets/footer-bg.png'
 import { IoIosSend } from "react-icons/io";
+import { IoIosTime } from "react-icons/io";
+import { MdOutlinePhoneCallback } from "react-icons/md";
+import { IoMdMail } from "react-icons/io";
+
 
 
 export default function Footer() {
@@ -11,14 +15,15 @@ export default function Footer() {
         backgroundPosition: 'center',
     };
     return (
-        <div>
-            <div className="bg-[transparent !important] px-7 md:px-12 lg:px-16 pt-16 shadow-xl"
-                style={
-                    backgroundStyle
-                }
+        <div className='bg-[transparent !important] pb-14 px-7 md:px-12 lg:px-16 pt-16 shadow-xl' 
+        style={
+            backgroundStyle
+        }
+        >
+            <div className=" xl:flex"
+                
             >
-
-                <div className='md:flex'>
+                <div className='md:flex xl:w-1/2'>
                     <div className="md:w-1/2">
                         <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750]">Bibrow</h1>
                         <p className="text-[#74787C] mb-4 md:text-[20px] font-semibold leading-normal">At TechPros Solutions, we are about technology and dedicated to providing IT solutions for businesses of all sizes.</p>
@@ -29,58 +34,75 @@ export default function Footer() {
                             <p className="text-[#74787C] font-semibold w-48">1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
                         </div>
                     </div>
-                    <div className="flex md:w-1/2 flex-col w-36 justify-center items-center mx-auto ">
+                    <div className="flex md:w-1/2 flex-col w-36 justify-center items-center xl:justify-start mx-auto ">
                         <div>
                             <h1 className="capitalize text-[#1D2C38] text-[28px] leading-4 mt-8 md:mt-0 mb-10 font-[750]">Page Links</h1>
                             <div className="text-start">
-                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal font-semibold">Service</p>
-                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal font-semibold">Portfolio</p>
-                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal font-semibold">Contact Us</p>
-                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal font-semibold">About Us</p>
-                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal font-semibold">Blog</p>
+                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer  font-semibold">Service</p>
+                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">Portfolio</p>
+                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">Contact Us</p>
+                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">About Us</p>
+                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">Blog</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="md:flex md:mt-16 lg:pl-10">
-                <div className='mt-8 md:mt-0 md:w-1/2'>
-                    <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750]">Contacts</h1>
-                    <div>
-                        <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
-                            <FaLocationDot />
-                            <p className='w-48 md:w-full md:font-semibold text-[17px]'>1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
-                        </div>
-                        <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
-                            <FaLocationDot />
-                            <p className='w-48 md:w-full md:font-semibold text-[17px]'>1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
-                        </div>
-                        <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
-                            <FaLocationDot />
-                            <p className='w-48 md:w-full md:font-semibold text-[17px]'>1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
-                        </div>
-                        <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
-                            <FaLocationDot />
-                            <p className='w-48 md:w-full md:font-semibold text-[17px]'>1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
-                        </div>
+                <div className="md:flex md:mt-16 xl:mt-0 lg:pl-10">
+                    <div className='mt-8 md:mt-0 md:w-1/2'>
+                        <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750]">Contacts</h1>
+                        <div>
+                            <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
+                                <FaLocationDot className="cursor-pointer w-6 h-6" />
+                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
+                            </div>
+                            <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
+                                <IoIosTime className="cursor-pointer w-6 h-6"  />
+                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>Mon-Friday 9:00 - 7:00</p>
+                            </div>
+                            <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
+                                <MdOutlinePhoneCallback className="cursor-pointer w-6 h-6" />
+                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>+92 345 4467795</p>
+                            </div>
+                            <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
+                                <IoMdMail className="cursor-pointer w-6 h-6" />
+                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>bibrowSolutions@Gmail.com</p>
+                            </div>
 
-                    </div>
-                </div>
-                <div class='bg-[#F8FBFF]  rounded-md flex flex-col justify-center items-center md:w-1/2'>
-                    <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750] pt-16 md:pt-0">Subscribe</h1>
-                    <p className="text-center px-9 text-[#74787C] capitalize mb-3">are you interested in following our particular website</p>
-                    <div class='relative z-50 flex items-center'>
-                        <input type="email" className="bg-transparent md:w-64 lg:w-96 lg:h-16 border-2 border-[#90a6c2] h-12 rounded-lg text-start pl-8 text-[#666F9D]"
-                            placeholder='Enter Your Email'
-                            name="" id="" />
-                        <div className="bg-blue-600 w-12 h-10 absolute right-2 flex justify-center my-2 items-center rounded-lg">
-                            <IoIosSend className="w-7 h-7 text-white cursor-pointer" />
                         </div>
                     </div>
+                    <div class='bg-[#F8FBFF]  rounded-md flex flex-col justify-center xl:justify-start xl:pt-8 items-center md:w-1/2'>
+                        <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750] pt-16 md:pt-0">Subscribe</h1>
+                        <p className="text-center px-9 text-[#74787C] xl:text-lg capitalize mb-3">are you interested in following our particular website</p>
+                        <div class='relative z-50 flex items-center'>
+                            <input type="email" className="bg-transparent md:w-64 lg:w-96 xl:w-64 lg:h-16 xl:h-14 border-2 border-[#90a6c2] h-12 rounded-lg text-start pl-8 text-[#666F9D]"
+                                placeholder='Enter Your Email'
+                                name="" id="" />
+                            <div className="bg-blue-600 w-12 h-10 absolute right-2 flex justify-center my-2 items-center rounded-lg">
+                                <IoIosSend className="w-7 h-7 text-white cursor-pointer" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
-
+                
             </div>
+            <div className=" p-7 mt-20 md:justify-center md:items-center bg-[#F8FBFF] rounded-md flex flex-col md:flex md:flex-row justify-center mx-auto items-center ">
+                <div className="md:w-1/2">
+                    
+                <p className="text-[18px] mx-auto text-center lg:text-start font-semibold text-[#000F5C]">@ Copyright 2017 Bibrow Soluton's All Rights Reserved</p>
+                </div>
+                    <div className='flex md:w-1/2 capitalize  justify-center items-center text-[#000F5C] text-[16px] font-normal flex-wrap text-right mt-5 gap-6 lg:gap-8 pl-16 '>
+                    <p className="font-normal xl:text-lg cursor-pointer">Facebook</p>
+                    <a href="https://twitter.com/UsmanMu53665476" className="font-normal xl:text-lg cursor-pointer">Twitter</a>
+                    {/* <p className="font-normal xl:text-lg cursor-pointer">Twitter</p> */}
+                    <a href="https://www.instagram.com/i_m_um56/" target="_blank" className="font-normal xl:text-lg cursor-pointer">Instagram</a>
+                    <a href="https://www.linkedin.com/in/muhammad-usman-b667072a8/" target="_blank" className="font-normal xl:text-lg cursor-pointer">linkdin</a>
+                    {/* <a className="font-normal xl:text-lg cursor-pointer">Instagram */}
+                    <p className="font-normal xl:text-lg cursor-pointer">Pintrest</p>
+                    </div>
+                    {/* https://www.linkedin.com/in/muhammad-usman-b667072a8/ */}
+            </div>
+
         </div>
     )
 }
