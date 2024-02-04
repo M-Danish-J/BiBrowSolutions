@@ -232,7 +232,7 @@ export default function Section() {
               </div>
             </div>
           </div>
-          <div className="flex max-w-[260px]   shadow-md  bg-transparent absolute left-0 md:bg-opacity-75 md:bg-white md:shadow-lg top-[275px] md:left-[15%] md:top-[79%] p-4 absolute-div2">
+          <div className="flex max-w-[260px]   shadow-md  bg-transparent absolute left-0 md:bg-opacity-75 md:bg-white md:shadow-lg top-[275px] md:left-[15%] md:top-[79%] lg:top-[100%] p-4 absolute-div2">
             <div className="flex justify-center items-center gap-4">
               {/* <i aria-hidden="true" className="flaticon flaticon-web-maintenance"></i> */}
               <Image image={icon1} className="w-12 h-12" alt="" />
