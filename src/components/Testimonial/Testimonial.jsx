@@ -47,12 +47,19 @@ export default function Testimonial() {
                 swipeable={true}
                 infinite={true}
                 responsive={responsive}
-                // autoPlay={true}
+                autoPlay={true}
                 autoPlaySpeed={3000}
                 arrows={false}
                 dotListClass="custom-dot-list-style"
                 className='pb-24 pt-16 flex justify-center items-center'
             >
+                
+                <TestimonialCard />
+                <TestimonialCard />
+                <TestimonialCard />
+                <TestimonialCard />
+                <TestimonialCard />
+                <TestimonialCard />
                 <TestimonialCard />
                 <TestimonialCard />
                 <TestimonialCard />
