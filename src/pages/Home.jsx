@@ -7,6 +7,7 @@ import Service from '../components/Servicee/Service'
 import AboutUs from '../components/About/AboutUs'
 import Solution from '../components/Solution/Solution'
 import UpButton from '../components/Up/UpButton'
+import Footer from '../components/Footer/Footer'
 
 export default function Home() {
     const [showUpButton, setShowUpButton] = useState(false);
@@ -40,7 +41,8 @@ export default function Home() {
                 <div className="fixed bottom-12 right-12">
                     <UpButton />
                 </div>
-            )}
+            )}<Footer/>
+
         </div>
     )
 }
