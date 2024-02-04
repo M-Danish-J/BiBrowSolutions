@@ -74,11 +74,11 @@ export default function Footer() {
                     <div class='bg-[#F8FBFF]  rounded-md flex flex-col justify-center xl:justify-start xl:pt-8 items-center md:w-1/2'>
                         <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750] pt-16 md:pt-0">Subscribe</h1>
                         <p className="text-center px-9 text-[#74787C] xl:text-lg capitalize mb-3">are you interested in following our particular website</p>
-                        <div class='relative z-50 flex items-center'>
+                        <div class='relative z-50 flex items-center mb-9'>
                             <input type="email" className="bg-transparent md:w-64 lg:w-96 xl:w-64 lg:h-16 xl:h-14 border-2 border-[#90a6c2] h-12 rounded-lg text-start pl-8 text-[#666F9D]"
                                 placeholder='Enter Your Email'
                                 name="" id="" />
-                            <div className="bg-blue-600 w-12 h-10 absolute right-2 flex justify-center my-2 items-center rounded-lg">
+                            <div className="bg-[#4d79cc] w-12 h-10 absolute right-2 flex justify-center my-2 items-center rounded-lg">
                                 <IoIosSend className="w-7 h-7 text-white cursor-pointer" />
                             </div>
                         </div>

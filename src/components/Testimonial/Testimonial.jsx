@@ -24,14 +24,14 @@ export default function Testimonial() {
         }
     };
 
-    // const CustomDot = ({ onClick, index, active }) => (
-    //     <button
-    //         className={`border-white outline-blue-400 outline-2 border-4 ${active ? "bg-blue-800 outline outline-1 outline-blue-600" : "bg-gray-100"
-    //             } w-5 h-5 rounded-full mx-1 mt-96 `}
-    //         onClick={() => onClick()}
-    //     >
-    //     </button>
-    // );
+    const CustomDot = ({ onClick, index, active }) => (
+        <button
+            className={`border-white outline-blue-400 outline-2 border-4 ${active ? "bg-blue-800 outline outline-1 outline-blue-600" : "bg-gray-100"
+                } w-5 h-5 rounded-full mx-1 -mt-8 `}
+            onClick={() => onClick()}
+        >
+        </button>
+    );
 
 
     return (
@@ -42,21 +42,22 @@ export default function Testimonial() {
             <Heading className="xl:px-52 text-[48px] mb-6 font-extrabold text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
             <Carousel renderButtonGroupOutside={true}
                 draggable={true}
-                // showDots={true}
-                // customDot={<CustomDot />}
+                showDots={true}
+                customDot={<CustomDot />}
                 swipeable={true}
                 infinite={true}
                 responsive={responsive}
-                autoPlay={true}
+                // autoPlay={true}
                 autoPlaySpeed={3000}
                 arrows={false}
                 dotListClass="custom-dot-list-style"
+                className='pb-24 pt-16 flex justify-center items-center'
             >
                 <TestimonialCard />
                 <TestimonialCard />
                 <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
+                {/* <TestimonialCard /> */}
+                {/* <TestimonialCard /> */}
             </Carousel>
         </div>
     );

@@ -12,13 +12,13 @@ const Accordion = ({ q, a, isOpen, onClick }) => {
     };
 
     return (
-        <div className='px-2 md:px-7 md:py-4 shadow border'>
+        <div className='px-2 md:px-7 md:py-4 shadow-lg border'>
             <div
                 onClick={toggleAccordion}
                 className='flex items-center justify-between text-xl font-medium cursor-pointer text-[#000F5C] py-5'
             >
                 <p className=''>{q}</p>
-                <div className={`icon-container ${iconRotated ? 'rotate' : ''}`}>
+                <div className={`icon-container transition-transform ${iconRotated ? 'rotate' : ''}`}>
                     {iconRotated ? <GoArrowRight /> : <BsPlusLg />}
                 </div>
             </div>
