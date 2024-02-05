@@ -57,12 +57,12 @@ export default function Testimonial() {
                 <TestimonialCard />
                 <TestimonialCard />
                 <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
-                <TestimonialCard />
+                {/* <TestimonialCard /> */}
+                {/* <TestimonialCard /> */}
+                {/* <TestimonialCard /> */}
+                {/* <TestimonialCard /> */}
+                {/* <TestimonialCard /> */}
+                {/* <TestimonialCard /> */}
                 {/* <TestimonialCard /> */}
                 {/* <TestimonialCard /> */}
             </Carousel>
