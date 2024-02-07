@@ -1,9 +1,8 @@
 import './App.css';
-// import AboutUs from './components/About/AboutUs';
-import 'aos/dist/aos.css'; 
-import AOS from 'aos';// Add this line
 
-// import Section from './components/Home/Section';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 import Home from './pages/Home';
 import { useEffect } from 'react';
 function App() {
@@ -11,11 +10,7 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <div className=''>
-      <Home />
-      {/* <Section /> */}
-      {/* <AboutUs/> */}
-    </div>
+    <Home />
   );
 }
 

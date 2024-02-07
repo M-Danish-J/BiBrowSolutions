@@ -53,7 +53,7 @@ export default function Testimonial() {
                 dotListClass="custom-dot-list-style"
                 className='pb-24 pt-16 flex justify-center items-center'
             >
-                
+
                 <TestimonialCard />
                 <TestimonialCard />
                 <TestimonialCard />
