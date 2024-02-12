@@ -45,7 +45,6 @@ export default function Home() {
             )}
             <FooterSection />
             <Footer />
-
         </div>
     )
 }
