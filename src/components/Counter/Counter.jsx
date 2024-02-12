@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { HiOutlineCheck } from "react-icons/hi";
-import { Fade } from 'react-reveal';
+// import { Fade } from 'react-reveal';
 import './Counter.css'
 
 const Counter = () => {
     return (
         <>
             <div className='bg-white fadeInUp  grid sm:grid-cols-2 lg:grid-cols-3 border shadow-lg items-center justify-start gap-16 lg:gap-0 px-10 lg:px-32 py-10 sm:py-20' >
-                <Fade left>
-                    <Component finalValue={12} speed={350} symbol='M+' desc='Successful work' animation="slideInLeft" />
-                </Fade>
-                <Fade up>
-                    <Component finalValue={18} speed={200} symbol='%' desc='Upgrade conversion' animation="slideInUp" />
-                </Fade>
-                <Fade right>
-                    <Component finalValue={10} speed={300} symbol='M' desc='Client Review' animation="slideInRight" />
+                {/* <Fade left> */}
+                <Component finalValue={12} speed={350} symbol='M+' desc='Successful work' animation="slideInLeft" />
+                {/* </Fade> */}
+                {/* <Fade up> */}
+                <Component finalValue={18} speed={200} symbol='%' desc='Upgrade conversion' animation="slideInUp" />
+                {/* </Fade> */}
+                {/* <Fade right> */}
+                <Component finalValue={10} speed={300} symbol='M' desc='Client Review' animation="slideInRight" />
 
-                </Fade>
+                {/* </Fade> */}
             </div>
         </>
     );

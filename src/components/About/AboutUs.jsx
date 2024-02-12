@@ -5,17 +5,17 @@ import Paragraph from '../Custom/Paragragh/Paragraph'
 import aboutusimg from '../../assets/about-seven.png'
 import Image from '../Custom/Image/Image'
 import CheckPoint from '../CheckPoint/CheckPoint'
-import { Fade } from 'react-reveal'
+// import { Fade } from 'react-reveal'
 
 export default function AboutUs() {
   return (
     <div className=" mt-[11em] md:mt-[25em] lg:mt-[32em] xl:mt-[14em] xl:flex xl:justify-center    mx-3 xl:ml-44" id='aboutus'>
-      <Fade left>
+      {/* <Fade left> */}
       <div className='flex justify-center items-center xl:w[45%]'>
         <Image image={aboutusimg} className="w-full " />
       </div>
-      </Fade>
-      <Fade right>
+      {/* </Fade> */}
+      {/* <Fade right> */}
       <div className="mt-12 xl:mt-0 xl:w-[45%]">
         <Button className=" bg-[#FF7A41] mb-6 lg:mb-2 lg:p-2.5 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="02 What We Do" />
         <Heading className="text-[60px] md:text-[50px] lg:text-[45px] lg:font-[900] xl:text-[55px] xl:w-[600px] 
@@ -31,7 +31,7 @@ export default function AboutUs() {
         <Button text="Start Free Trail" className="text-white text-base font-bold px-7 py-4 bg-[#0d6efd] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
 
       </div>
-      </Fade>
+      {/* </Fade> */}
     </div>
   )
 }
