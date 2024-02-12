@@ -35,11 +35,11 @@ export default function Testimonial() {
 
 
     return (
-        <div className='my-16 md:mt-96 xl:mt-20 sm:mx-10 lg:mx-32 xl:mx-40'>
-            <div className="text-center">
-                <Button className=" bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="07 Testimonial" />
+        <div className='my-16 md:mt-96 xl:mt-20 sm:mx-7 lg:mx-32 xl:mx-40'>
+            <div className="px-4 md:text-center">
+                <Button className="bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="07 Testimonial" />
             </div>
-            <Heading className="xl:px-52 text-[48px] mb-6 font-extrabold text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
+            <Heading className="px-4 xl:px-52 text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
             <Carousel renderButtonGroupOutside={true}
                 draggable={true}
                 showDots={true}
@@ -51,20 +51,12 @@ export default function Testimonial() {
                 autoPlaySpeed={3000}
                 arrows={false}
                 dotListClass="custom-dot-list-style"
-                className='pb-24 pt-16 flex justify-center items-center'
+                className='pb-24 pt-16'
             >
 
                 <TestimonialCard />
                 <TestimonialCard />
                 <TestimonialCard />
-                {/* <TestimonialCard /> */}
-                {/* <TestimonialCard /> */}
-                {/* <TestimonialCard /> */}
-                {/* <TestimonialCard /> */}
-                {/* <TestimonialCard /> */}
-                {/* <TestimonialCard /> */}
-                {/* <TestimonialCard /> */}
-                {/* <TestimonialCard /> */}
             </Carousel>
         </div>
     );

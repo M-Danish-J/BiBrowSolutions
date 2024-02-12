@@ -39,12 +39,12 @@ export default function Home() {
             <FAQsPage />
             <Testimonial />
             {showUpButton && (
-                <div className="fixed bottom-12 right-12">
+                <div className="fixed md:bottom-12 md:right-12 bottom-4 right-4">
                     <UpButton />
                 </div>
             )}
-            <FooterSection/>
-            <Footer/>
+            <FooterSection />
+            <Footer />
 
         </div>
     )

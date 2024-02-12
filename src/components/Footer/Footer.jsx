@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaLocationDot } from "react-icons/fa6";
 import footerbg from '../../assets/footer-bg.png'
 import { IoIosSend } from "react-icons/io";
 import { IoIosTime } from "react-icons/io";
 import { MdOutlinePhoneCallback } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
-
+import { toast } from "react-toastify";
+import emailjs from '@emailjs/browser';
 
 
 export default function Footer() {
@@ -14,15 +15,39 @@ export default function Footer() {
 
         backgroundPosition: 'center',
     };
-    return (
-        <div className='bg-[transparent !important] pb-14 px-7 md:px-12 lg:px-16 pt-16 shadow-xl' 
-        style={
-            backgroundStyle
+    const emailIsValid = (email) => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        if (!emailIsValid(email)) {
+            toast.error("Please enter a valid email address.");
+            return;
         }
+        if (message.trim() === '') {
+            toast.error("Please enter a message.");
+            return;
+        }
+        const values = { email, message }
+        emailjs.send('service_9izmep3', 'template_l3q9crb', values, 'NoMSHdZ8hBy4kNigW')
+            .then((response) => {
+                console.log('Email sent:', response);
+                toast.success("Email Sent Successfully! Thank You For Contacting Us!");
+            })
+            .catch((error) => {
+                console.error('Email error:', error);
+                toast.error("Failed to send email. Please try again later.");
+            });
+    }
+    return (
+        <div className='bg-[transparent !important] pb-14 px-7 md:px-12 lg:px-16 pt-16 shadow-xl'
+            style={
+                backgroundStyle
+            }
         >
-            <div className=" xl:flex"
-                
-            >
+            <div className=" xl:flex"            >
                 <div className='md:flex xl:w-1/2'>
                     <div className="md:w-1/2">
                         <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750]">Bibrow</h1>
@@ -34,7 +59,7 @@ export default function Footer() {
                             <p className="text-[#74787C] font-semibold w-48">1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
                         </div>
                     </div>
-                    <div className="flex md:w-1/2 flex-col w-36 justify-center items-center xl:justify-start mx-auto ">
+                    <div className="flex md:w-1/2 flex-col md:justify-center md:items-center xl:justify-start mx-auto ">
                         <div>
                             <h1 className="capitalize text-[#1D2C38] text-[28px] leading-4 mt-8 md:mt-0 mb-10 font-[750]">Page Links</h1>
                             <div className="text-start">
@@ -48,7 +73,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="md:flex md:mt-16 xl:mt-0 lg:pl-10">
+                <div className="md:flex md:mt-16 xl:mt-0 lg:pl-10 ">
                     <div className='mt-8 md:mt-0 md:w-1/2'>
                         <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750]">Contacts</h1>
                         <div>
@@ -57,7 +82,7 @@ export default function Footer() {
                                 <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
                             </div>
                             <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
-                                <IoIosTime className="cursor-pointer w-6 h-6"  />
+                                <IoIosTime className="cursor-pointer w-6 h-6" />
                                 <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>Mon-Friday 9:00 - 7:00</p>
                             </div>
                             <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
@@ -71,38 +96,38 @@ export default function Footer() {
 
                         </div>
                     </div>
-                    <div class='bg-[#F8FBFF]  rounded-md flex flex-col justify-center xl:justify-start xl:pt-8 items-center md:w-1/2'>
-                        <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750] pt-16 md:pt-0">Subscribe</h1>
+                    <div className='bg-[#F8FBFF] rounded-md flex flex-col justify-center xl:justify-start pt-8 items-center md:w-1/2 shadow z-20'>
+                        <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750] pt-16 md:pt-0">Contact Us</h1>
                         <p className="text-center px-9 text-[#74787C] xl:text-lg capitalize mb-3">are you interested in following our particular website</p>
-                        <div class='relative z-50 flex items-center mb-9'>
-                            <input type="email" className="bg-transparent md:w-64 lg:w-96 xl:w-64 lg:h-16 xl:h-14 border-2 border-[#90a6c2] h-12 rounded-lg text-start pl-8 text-[#666F9D]"
+                        <form onSubmit={handleSubmit} className='flex flex-col items-start justify-center gap-2 pb-6'>
+                            <input onChange={(e) => (setEmail(e.target.value))} type="email" className="bg-transparent md:w-64 lg:w-96 xl:w-64 lg:h-16 xl:h-14 border border-[#90a6c2] h-12 rounded-lg text-start px-6 text-[#666F9D] focus:outline-none"
                                 placeholder='Enter Your Email'
-                                name="" id="" />
-                            <div className="bg-[#4d79cc] w-12 h-10 absolute right-2 flex justify-center my-2 items-center rounded-lg">
+                                name="email" />
+                            <textarea onChange={(e) => (setMessage(e.target.value))} className="bg-transparent  border h-32 pt-2 border-[#90a6c2] rounded-lg text-start px-6 w-full text-[#666F9D] focus:outline-none"
+                                placeholder='Type Message'
+                                name="message" />
+                            <button className='bg-[#4d79cc] hover:bg-[#3e66ae] px-3 py-2 text-white gap-2 flex justify-center my-2 items-center rounded-lg ' type="submit"> Send
                                 <IoIosSend className="w-7 h-7 text-white cursor-pointer" />
-                            </div>
-                        </div>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                
+
             </div>
-            <div className=" p-7 mt-20 md:justify-center md:items-center bg-[#F8FBFF] rounded-md flex flex-col md:flex md:flex-row justify-center mx-auto items-center ">
+            <div className=" p-7 mt-20 md:justify-center md:items-center bg-[#F8FBFF] rounded-md flex flex-col md:flex md:flex-row justify-center mx-auto items-center shadow z-20">
                 <div className="md:w-1/2">
-                    
-                <p className="text-[18px] mx-auto text-center lg:text-start font-semibold text-[#000F5C]">@ Copyright 2017 Bibrow Soluton's All Rights Reserved</p>
+
+                    <p className="text-[18px] mx-auto text-center lg:text-start font-semibold text-[#000F5C]">@ Copyright 2017 Bibrow Soluton's All Rights Reserved</p>
                 </div>
-                    <div className='flex md:w-1/2 capitalize  justify-center items-center text-[#000F5C] text-[16px] font-normal flex-wrap text-right mt-5 gap-6 lg:gap-8 pl-16 '>
+                <div className='flex md:w-1/2 capitalize  justify-center items-center text-[#000F5C] text-[16px] font-normal flex-wrap text-right mt-5 gap-6 lg:gap-8 md:pl-16 '>
                     <p className="font-normal xl:text-lg cursor-pointer">Facebook</p>
-                    <a href="https://twitter.com/UsmanMu53665476" className="font-normal xl:text-lg cursor-pointer">Twitter</a>
-                    {/* <p className="font-normal xl:text-lg cursor-pointer">Twitter</p> */}
+                    <a href="https://twitter.com/UsmanMu53665476" target='_blank' className="font-normal xl:text-lg cursor-pointer">Twitter</a>
                     <a href="https://www.instagram.com/i_m_um56/" target="_blank" className="font-normal xl:text-lg cursor-pointer">Instagram</a>
-                    <a href="https://www.linkedin.com/in/muhammad-usman-b667072a8/" target="_blank" className="font-normal xl:text-lg cursor-pointer">linkdin</a>
-                    {/* <a className="font-normal xl:text-lg cursor-pointer">Instagram */}
+                    <a href="https://www.linkedin.com/in/muhammad-usman-b667072a8/" target="_blank" className="font-normal xl:text-lg cursor-pointer">linkedin</a>
                     <p className="font-normal xl:text-lg cursor-pointer">Pintrest</p>
-                    </div>
-                    {/* https://www.linkedin.com/in/muhammad-usman-b667072a8/ */}
+                </div>
             </div>
 
-        </div>
+        </div >
     )
 }

@@ -1,5 +1,6 @@
 import './App.css';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
@@ -10,7 +11,10 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <Home />
+    <>
+      <Home />
+      <ToastContainer />
+    </>
   );
 }
 

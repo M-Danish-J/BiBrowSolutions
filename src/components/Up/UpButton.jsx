@@ -14,7 +14,7 @@ const UpButton = () => {
         }, 800);
     }
     return (
-        <div onClick={handleScroll} className='px-3 py-3 bg-[#2058bf] rounded text-white cursor-pointer'>
+        <div onClick={handleScroll} className='px-2 md:px-3 py-2 md:py-3 bg-[#2058bf] rounded text-white cursor-pointer'>
             <FaChevronUp />
         </div>
     )
