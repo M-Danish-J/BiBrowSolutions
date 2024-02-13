@@ -17,15 +17,24 @@ const Service = () => {
     };
     return (
         <>
-            <div className='mt-32 px-4 lg:px-20 xl:px-40 relative' id='service'>
-                <div className="md:text-center">
+            <div className='mt-24 md:mt-32 px-4 lg:px-20 xl:px-40 relative' id='service'>
+                <div data-aos="fade-up" data-aos-duration="2000" className="md:text-center">
                     <Button className=" bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="03 Our Services" />
+                    <Heading className="xl:px-52 text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Our proposition Data Science and Analytics Services" />
                 </div>
-                <Heading className="xl:px-52 text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Our proposition Data Science and Analytics Services" />
                 < div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 items-center justify-center" >
-                    <ServiceCard title='Machine Learning Bootcamp' image={serviceImg1} />
-                    <ServiceCard title='Digital Data Consulting for Science lab' image={serviceImg2} />
-                    <ServiceCard title='Data Visualization BootCamp' image={serviceImg1} />
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <ServiceCard title='Machine Learning Bootcamp' image={serviceImg1} />
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <ServiceCard title='Digital Data Consulting for Science lab' image={serviceImg2} />
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-duration="2000">
+                        <ServiceCard title='Data Visualization BootCamp' image={serviceImg1} />
+                    </div>
+
                 </div >
 
                 < div className="hidden md:block absolute top-40 left-20 zoom-in-zoom-out" >
@@ -36,7 +45,7 @@ const Service = () => {
                 </div>
             </div >
             <div style={backgroundStyle} className="flex items-center justify-center text-lg underline-offset-4 underline h-72 text-center px-4">
-                <p data-aos="fade-up" data-aos-duration="3000" className='text-[#666F9D]'>Want to learn More about Our Services?
+                <p data-aos="fade-up" data-aos-duration="500" className='text-[#666F9D]'>Want to learn More about Our Services?
                     <strong className='font-extrabold text-black'>Click here</strong></p>
             </div>
         </>

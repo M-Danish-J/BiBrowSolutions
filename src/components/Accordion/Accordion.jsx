@@ -12,7 +12,7 @@ const Accordion = ({ q, a, isOpen, onClick }) => {
     };
 
     return (
-        <div className='px-2 md:px-7 md:py-4 shadow-lg border'>
+        <div className='px-2 md:px-7 pb-4 rounded-sm md:py-4 shadow-lg border'>
             <div
                 onClick={toggleAccordion}
                 className='flex items-center justify-between text-xl font-medium cursor-pointer text-[#000F5C] py-5'
