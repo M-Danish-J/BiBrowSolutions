@@ -6,7 +6,7 @@ import { FaQuoteRight } from "react-icons/fa";
 export default function TestimonialCard() {
     return (
         <div>
-            <div className=" flex flex-col justify-center border-2 shadow bg-white w-[347px] relative pt-12 rounded-md">
+            <div className=" flex flex-col justify-center border-2 shadow bg-white sm:w-[347px] relative pt-12 rounded-md">
                 <div>
                     <Paragraph title="Nam venenatis vehicula orci, cursus at sapien et. Donec suscipit porta turpis non malesuada. In sit amet vestibulum" className="text-[#666F9D] px-8 text-base text-start" />
                 </div>
