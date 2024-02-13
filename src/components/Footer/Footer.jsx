@@ -96,7 +96,7 @@ export default function Footer() {
 
                         </div>
                     </div>
-                    <div className='bg-[#F8FBFF] rounded-md flex flex-col justify-center xl:justify-start pt-8 items-center md:w-1/2 shadow z-20'>
+                    <div className='bg-[#F8FBFF] rounded-md flex flex-col justify-center xl:justify-start pt-8 items-center md:w-1/2 shadow'>
                         <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750] pt-16 md:pt-0">Contact Us</h1>
                         <p className="text-center px-9 text-[#74787C] xl:text-lg capitalize mb-3">are you interested in following our particular website</p>
                         <form onSubmit={handleSubmit} className='flex flex-col items-start justify-center gap-2 pb-6'>

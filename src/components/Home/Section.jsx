@@ -4,7 +4,6 @@ import Button from '../Custom/Button/Button'
 import Paragraph from '../Custom/Paragragh/Paragraph'
 import Image from '../Custom/Image/Image'
 import img from '../../assets/bgHome.png'
-// import { Fade } from 'react-reveal';
 import icon1 from '../../assets/web-maintenance.png'
 import BgSection from '../../assets/hero-seven-bg-1-1.png'
 import shape1 from '../../assets/hero-shape1.png'
@@ -200,8 +199,7 @@ export default function Section() {
         <div className="hidden xl:block">
           <img src={shape1} alt="" className="absolute top-[100px] left-[100px] absoluteimg " />
         </div>
-        {/* <Fade left> */}
-        <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="6000" className="mt-[3.5em]  md:mt-[7em] xl:mt-[6em] md:mx-10 xl:ml-60 xl:w-[50%]   mx-5 xl:mx-0">
+        <div data-aos="fade-right" data-aos-offset="500" data-aos-duration="1000" className="mt-[2em]  md:mt-[7em] xl:mt-[6em] md:mx-10 xl:ml-60 xl:w-[50%]   mx-5 xl:mx-0">
           <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="01 provide Best Services" />
           <Heading className="text-[60px] md:text-[90px] lg:text-[85px] lg:font-[900] xl:text-[90px] lg:leading-[115px] xl:leading-[95px] md:leading-[1.11em] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]" title="Big data will Come up with A Solution" />
           <Paragraph title="Maecenas tincidunt ex quis arcu ultrices, et commodo diam
@@ -209,12 +207,10 @@ export default function Section() {
           <Button text="Start Free Trail" className="text-white text-base font-bold px-7 py-4 bg-[#0d6efd] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
 
         </div>
-        {/* </Fade> */}
         <div className="hidden xl:block">
           <img src={shape2} alt="" className="absolute top-[105px] left-[870px] absoluteimg " />
         </div>
-        {/* <Fade right> */}
-        <div className="mx-5  h-[350px] mt-8 md:mt-28 relative xl:w-[50%] xl:pr-4 ">
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="500" className="mx-5  h-[350px] mt-8 md:mt-28 relative xl:w-[50%] xl:pr-4 ">
           <Image image={img} className="overflow-clip" />
           <div className="flex max-w-[240px]  bg-transparent shadow-md  absolute p-4 md:bg-white md:shadow-lg md:bg-opacity-75  absolute-div">
             <div className="flex justify-center items-center gap-4">
@@ -247,7 +243,6 @@ export default function Section() {
             </div>
           </div>
         </div>
-        {/* </Fade> */}
       </div>
     </>
   )
