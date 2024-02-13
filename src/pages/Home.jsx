@@ -23,9 +23,21 @@ export default function Home() {
         };
 
         window.addEventListener('scroll', handleScroll);
+        // 
+        const preventDefaultHandler = (event) => {
+            event.preventDefault();
+        };
 
+        // const disable = () => {
+        //     document.addEventListener('contextmenu', preventDefaultHandler);
+        //     document.addEventListener('keydown', preventDefaultHandler);
+        // };
+
+        // disable();
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            // document.removeEventListener('contextmenu', preventDefaultHandler);
+            // document.removeEventListener('keydown', preventDefaultHandler);
         };
     }, []);
 

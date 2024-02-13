@@ -74,7 +74,7 @@ export default function Navbar() {
                             <li onClick={(event) => scrollToSection(event, 'aboutus')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>About Us</li>
                             <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Service</li>
                             <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Faq</li>
-                            <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Pricing</li>
+                            {/* <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Pricing</li> */}
                             <li onClick={(event) => scrollToSection(event, 'blog')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Blog</li>
                         </ul>
                     </nav>
@@ -108,7 +108,7 @@ export default function Navbar() {
                                     <li onClick={(event) => scrollToSection(event, 'aboutus')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>About Us</li>
                                     <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Service</li>
                                     <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Faq</li>
-                                    <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Pricing</li>
+                                    {/* <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Pricing</li> */}
                                     <li onClick={(event) => scrollToSection(event, 'blog')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Blog</li>
                                 </ul>
                                 <div className="absolute -right-5 top-6 text-white px-2 py-2 rounded-full bg-[#283641] " onClick={handleToggle}>

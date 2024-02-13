@@ -13,7 +13,7 @@ const FAQsPage = () => {
       <div className="xl:w-1/2">
         <FAQs />
       </div>
-      <div className="xl:w-1/2 px-4 xl:px-0">
+      <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="2000" className="xl:w-1/2 px-4 xl:px-0">
         <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="05 FAQ" />
         <Heading className="text-[48px] lg:font-[900] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]" title="Any Questions for Data science" />
         <Paragraph title="Nam venenatis vehicula orci, at cursus sapien vestibulum et. Donec suscipit porta turpis non malesuada. In sit amet ex eget turpis molestie tincidunt vel a massa." className="text-[#666F9D] mb-10 md:mb-14 text-[20px] leading-[30px]" />

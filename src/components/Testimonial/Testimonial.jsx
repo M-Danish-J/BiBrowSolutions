@@ -36,10 +36,12 @@ export default function Testimonial() {
 
     return (
         <div className='my-16 md:mt-96 xl:mt-20 sm:mx-7 lg:mx-32 xl:mx-40'>
-            <div className="px-4 md:text-center">
-                <Button className="bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="07 Testimonial" />
+            <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="2000">
+                <div className="px-4 md:text-center">
+                    <Button className="bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="07 Testimonial" />
+                </div>
+                <Heading className="px-4 xl:px-52 text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
             </div>
-            <Heading className="px-4 xl:px-52 text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
             <Carousel renderButtonGroupOutside={true}
                 draggable={true}
                 showDots={true}
