@@ -9,6 +9,7 @@ import Solution from '../components/Solution/Solution'
 import UpButton from '../components/Up/UpButton'
 import Footer from '../components/Footer/Footer'
 import FooterSection from '../components/FooterSection/FooterSection'
+import Blog from '../components/Blog/Blog'
 
 export default function Home() {
     const [showUpButton, setShowUpButton] = useState(false);
@@ -24,9 +25,9 @@ export default function Home() {
 
         window.addEventListener('scroll', handleScroll);
         // 
-        const preventDefaultHandler = (event) => {
-            event.preventDefault();
-        };
+        // const preventDefaultHandler = (event) => {
+        //     event.preventDefault();
+        // };
 
         // const disable = () => {
         //     document.addEventListener('contextmenu', preventDefaultHandler);
@@ -56,6 +57,7 @@ export default function Home() {
                     <UpButton />
                 </div>
             )}
+            <Blog />
             <FooterSection />
             <Footer />
         </div>

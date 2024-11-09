@@ -5,7 +5,6 @@ import './Counter.css'
 const Counter = () => {
     return (
         <>
-<<<<<<< Updated upstream
             <div className='bg-white fadeInUp  grid sm:grid-cols-2 lg:grid-cols-3 border shadow-lg items-center justify-start gap-16 lg:gap-0 px-10 lg:px-32 py-10 sm:py-20' >
                 <div data-aos-offset="50" data-aos="fade-up-right" data-aos-duration="1000">
                     <Component finalValue={12} speed={350} symbol='M+' desc='Successful work' animation="slideInLeft" />
@@ -16,24 +15,6 @@ const Counter = () => {
                 <div data-aos-offset="50" data-aos="fade-up-left" data-aos-duration="1000">
                     <Component finalValue={10} speed={300} symbol='M' desc='Client Review' animation="slideInRight" />
                 </div>
-=======
-            <style dangerouslySetInnerHTML={{ __html: customStyles }} />
-            <div className='bg-white justify-center itc fadeInUp  grid sm:grid-cols-2 lg:grid-cols-3 border shadow-lg items-center gap-16 lg:gap-0 px-10 lg:px-32 py-10 sm:py-20' data-aos="zoom-in-up">
-                <Fade left>
-                    <Component finalValue={12} speed={350} symbol='M+' desc='Successful work' animation="slideInLeft" />
-                </Fade>
-                {/* <AnimatedCounter Count="12" speed={3500} symbol='M+' desc='Successful work' animation="slideInLeft"/> */}
-                {/* <AnimatedCounter Count="18" speed={2000} symbol='%' desc='Upgrade conversion' animation="slideInUp"/> */}
-                {/* <AnimatedCounter Count="10" speed={3000} symbol='M' desc='Client Review' animation="slideInRight"/> */}
-
-                <Fade up>
-                    <Component finalValue={18} speed={200} symbol='%' desc='Upgrade conversion' animation="slideInUp" />
-                </Fade>
-                <Fade right>
-                    <Component finalValue={10} speed={300} symbol='M' desc='Client Review' animation="slideInRight" />
-
-                </Fade>
->>>>>>> Stashed changes
             </div>
         </>
     );

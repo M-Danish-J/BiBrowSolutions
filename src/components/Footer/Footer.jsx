@@ -15,7 +15,6 @@ export default function Footer() {
 
         backgroundPosition: 'center',
     };
-<<<<<<< Updated upstream
     const emailIsValid = (email) => {
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
@@ -26,12 +25,6 @@ export default function Footer() {
         if (!emailIsValid(email)) {
             toast.error("Please enter a valid email address.");
             return;
-=======
-    return (
-        <div className='bg-[transparent !important] pb px-7 md:px-12 lg:px-16 xl:px-28 pt-16 shadow-xl' 
-        style={
-            backgroundStyle
->>>>>>> Stashed changes
         }
         if (message.trim() === '') {
             toast.error("Please enter a message.");
