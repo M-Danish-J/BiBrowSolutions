@@ -24,20 +24,27 @@ export default function Home() {
 
         window.addEventListener('scroll', handleScroll);
 
-        const preventDefaultHandler = (event) => {
+        const preventContextMenu = (event) => {
             event.preventDefault();
         };
 
-        const disable = () => {
-            document.addEventListener('contextmenu', preventDefaultHandler);
-            document.addEventListener('keydown', preventDefaultHandler);
+        const preventInspectKeys = (event) => {
+            if (
+                event.key === "F12" ||
+                (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) ||
+                (event.ctrlKey && event.key === "U")
+            ) {
+                event.preventDefault();
+            }
         };
 
-        disable();
+        document.addEventListener('contextmenu', preventContextMenu);
+        document.addEventListener('keydown', preventInspectKeys);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            document.removeEventListener('contextmenu', preventDefaultHandler);
-            document.removeEventListener('keydown', preventDefaultHandler);
+            document.removeEventListener('contextmenu', preventContextMenu);
+            document.removeEventListener('keydown', preventInspectKeys);
         };
     }, []);
 
