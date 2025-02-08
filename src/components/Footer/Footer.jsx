@@ -3,7 +3,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import footerbg from '../../assets/footer-bg.png'
 import { IoIosSend } from "react-icons/io";
 import { IoIosTime } from "react-icons/io";
-import { MdOutlinePhoneCallback } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import { toast } from "react-toastify";
 import emailjs from '@emailjs/browser';
@@ -53,7 +52,7 @@ export default function Footer() {
                 <div className='md:flex xl:w-1/2'>
                     <div className="md:w-1/2">
                         <h1 className="text-[#1D2C38] text-[28px] leading-4 mb-10 font-[750]">Bibrow</h1>
-                        <p className="text-[#74787C] mb-4 md:text-[20px] font-semibold leading-normal">At TechPros Solutions, we are about technology and dedicated to providing IT solutions for businesses of all sizes.</p>
+                        <p className="text-[#74787C] mb-4 md:text-[20px] font-semibold leading-normal">At Bibrow Solutions, we are about technology and dedicated to providing IT solutions for businesses of all sizes.</p>
                         <div className="flex justify-start gap-3 mt-8">
                             <div className="w-[45px] h-[45px]  leading-[45px] text-center bg-[#223452] flex justify-center items-center  rounded-[50%]">
                                 <FaLocationDot className="text-[#bdc2cb] " />
@@ -69,7 +68,6 @@ export default function Footer() {
                                 <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">Portfolio</p>
                                 <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">Contact Us</p>
                                 <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">About Us</p>
-                                <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">Blog</p>
                             </div>
                         </div>
                     </div>
@@ -88,12 +86,12 @@ export default function Footer() {
                                 <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>Mon-Friday 9:00 - 7:00</p>
                             </div>
                             <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
-                                <MdOutlinePhoneCallback className="cursor-pointer w-6 h-6" />
-                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>+92 345 4467795</p>
+                                <IoMdMail className="cursor-pointer w-6 h-6" />
+                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>iamsikandarali@gmail.com</p>
                             </div>
                             <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
                                 <IoMdMail className="cursor-pointer w-6 h-6" />
-                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>bibrowSolutions@Gmail.com</p>
+                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>minhaskhan939@gmail.com</p>
                             </div>
 
                         </div>
@@ -123,9 +121,8 @@ export default function Footer() {
                 </div>
                 <div className='flex md:w-1/2 capitalize  justify-center items-center text-[#000F5C] text-[16px] font-normal flex-wrap text-right mt-5 gap-6 lg:gap-8 md:pl-16 '>
                     <a target='_blank' href='https://www.facebook.com/climaxgamestudios?mibextid=ZbWKwL' className="font-normal xl:text-lg cursor-pointer">Facebook</a>
-                    <a href="https://youtube.com/@climaxgamestudios2285?si=mVXb5S01sO82b6oK" target='_blank' className="font-normal xl:text-lg cursor-pointer">Youtube</a>
-                    <a href="https://www.linkedin.com/company/climax-game-studios/" target="_blank" className="font-normal xl:text-lg cursor-pointer">LinkedIn</a>
-                    <a href="https://www.tiktok.com/@climaxgamestudios" target="_blank" className="font-normal xl:text-lg cursor-pointer">TikTok</a>
+                    <a href="https://www.linkedin.com/company/bibrow-solution/" target="_blank" className="font-normal xl:text-lg cursor-pointer">LinkedIn</a>
+                    <a href="https://www.tiktok.com/@climaxgamestudios" target="_blank" className="font-normal xl:text-lg cursor-pointer">Tiktok</a>
                 </div>
             </div>
 

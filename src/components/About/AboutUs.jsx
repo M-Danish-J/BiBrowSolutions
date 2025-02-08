@@ -8,7 +8,7 @@ import CheckPoint from '../CheckPoint/CheckPoint'
 
 export default function AboutUs() {
   return (
-    <div className=" mt-[7em] md:mt-[25em] lg:mt-[32em] xl:mt-[14em] xl:flex xl:justify-center mx-3 xl:ml-44" id='aboutus'>
+    <div className=" mt-[7em] md:mt-[25em] lg:mt-[32em] xl:mt-[14em] flex flex-col-reverse xl:flex-row xl:justify-center mx-3 xl:ml-44" id='aboutus'>
       <div data-aos="fade-right" data-aos-offset="50" data-aos-duration="2000" className='flex justify-center items-center xl:w[45%]'>
         <Image image={aboutusimg} className="w-full " />
       </div>

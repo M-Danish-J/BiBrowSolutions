@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaPhoneAlt } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
+import { IoMdClose, IoMdMail } from "react-icons/io";
 import "./Navbar.css"
 import Button from '../Custom/Button/Button';
 
@@ -70,10 +70,10 @@ export default function Navbar() {
                             BiBrow
                         </div>
                         <ul className={`flex items-center justify-center gap-9 font-bold text-base`}>
-                            <li onClick={(event) => scrollToSection(event, 'hero')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Home</li>
-                            <li onClick={(event) => scrollToSection(event, 'aboutus')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>About Us</li>
-                            <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Service</li>
-                            <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Faq</li>
+                            <li onClick={(event) => scrollToSection(event, 'hero')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black uppercase text-lg'>Home</li>
+                            <li onClick={(event) => scrollToSection(event, 'aboutus')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black uppercase text-lg'>About Us</li>
+                            <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black uppercase text-lg'>Service</li>
+                            <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black uppercase text-lg'>Faq</li>
                             {/* <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Pricing</li> */}
                         </ul>
                     </nav>
@@ -81,14 +81,14 @@ export default function Navbar() {
                         <div className="flex items-center gap-16 lg:gap-20">
                             <div className="flex items-center gap-4">
                                 <div className="px-4 py-4 rounded-full border">
-                                    <FaPhoneAlt size={18} />
+                                    <IoMdMail size={30} />
                                 </div>
-                                <div className="space-y-3">
-                                    <p className='text-sm text-[#333F7D]'>Tell Us</p>
-                                    <p>+92 345 4467795</p>
+                                <div >
+                                    <p className='text-sm text-[#333F7D]'>Mail Us</p>
+                                    <p>iamsikandarali@gmail.com</p>
                                 </div>
                             </div>
-                            <Button text="Contact Us" className="text-white text-base font-bold px-7 py-4 bg-[#104CBA] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
+                            <Button text="Contact Us" className="text-white text-base font-bold px-7  py-4 bg-[#104CBA] hover:bg-black cursor-pointer rounded-lg transition-all duration-500 break-keep" />
                         </div>
                     </div>
                     <div className="lg:hidden text-xl px-4 py-4 mx-10 bg-gray-100 hover:bg-[#283641] hover:text-white rounded-lg" onClick={handleToggle}>
