@@ -35,6 +35,8 @@ export default function Footer() {
             .then((response) => {
                 console.log('Email sent:', response);
                 toast.success("Email Sent Successfully! Thank You For Contacting Us!");
+                setEmail('')
+                setMessage('')
             })
             .catch((error) => {
                 console.error('Email error:', error);

@@ -46,7 +46,7 @@ export default function Testimonial() {
                 <div className="px-4 md:text-center">
                     <Button className="bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="Testimonial" />
                 </div>
-                <Heading className="px-4 xl:px-52 text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
+                <Heading className="px-4 xl:px-52 text-4xl md:text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Really take a look at What Say our clients" />
             </div>
             <Carousel renderButtonGroupOutside={true}
                 draggable={true}

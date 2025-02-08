@@ -20,7 +20,7 @@ const Service = () => {
             <div className='mt-24 md:mt-32 px-4 lg:px-20 xl:px-40 relative' id='service'>
                 <div data-aos="fade-up" data-aos-duration="2000" className="md:text-center">
                     <Button className=" bg-[#FF7A41] mb-6 text-white font-[750] text-[16px] px-4 py-[10px] rounded-[6px]" text="Our Services" />
-                    <Heading className="xl:px-52 text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Comprehensive Digital Development Services" />
+                    <Heading className="xl:px-52 text-4xl md:text-[48px] mb-6 font-extrabold md:text-center leading-[1.4em] text-[#000F5C]" title="Comprehensive Digital Development Services" />
                 </div>
                 < div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 items-center justify-center" >
                     <div data-aos="fade-up" data-aos-duration="2000">
