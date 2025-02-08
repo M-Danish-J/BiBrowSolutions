@@ -85,7 +85,7 @@ export default function Navbar() {
                                 </div>
                                 <div className="space-y-3">
                                     <p className='text-sm text-[#333F7D]'>Tell Us</p>
-                                    <p>+92 340 1655185</p>
+                                    <p>+92 345 4467795</p>
                                 </div>
                             </div>
                             <Button text="Contact Us" className="text-white text-base font-bold px-7 py-4 bg-[#104CBA] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
