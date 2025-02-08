@@ -75,7 +75,6 @@ export default function Navbar() {
                             <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Service</li>
                             <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Faq</li>
                             {/* <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Pricing</li> */}
-                            <li onClick={(event) => scrollToSection(event, 'blog')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black'>Blog</li>
                         </ul>
                     </nav>
                     <div className="hidden lg:hidden md:block xl:block">
@@ -89,7 +88,7 @@ export default function Navbar() {
                                     <p>+92 340 1655185</p>
                                 </div>
                             </div>
-                            <Button text="Start Free Trail" className="text-white text-base font-bold px-7 py-4 bg-[#104CBA] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
+                            <Button text="Contact Us" className="text-white text-base font-bold px-7 py-4 bg-[#104CBA] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
                         </div>
                     </div>
                     <div className="lg:hidden text-xl px-4 py-4 mx-10 bg-gray-100 hover:bg-[#283641] hover:text-white rounded-lg" onClick={handleToggle}>
@@ -109,7 +108,6 @@ export default function Navbar() {
                                     <li onClick={(event) => scrollToSection(event, 'service')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Service</li>
                                     <li onClick={(event) => scrollToSection(event, 'faq')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Faq</li>
                                     {/* <li onClick={(event) => scrollToSection(event, 'pricing')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Pricing</li> */}
-                                    <li onClick={(event) => scrollToSection(event, 'blog')} className='hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3'>Blog</li>
                                 </ul>
                                 <div className="absolute -right-5 top-6 text-white px-2 py-2 rounded-full bg-[#283641] " onClick={handleToggle}>
                                     <IoMdClose size={20} />

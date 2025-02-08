@@ -14,10 +14,14 @@ const FAQsPage = () => {
         <FAQs />
       </div>
       <div data-aos="fade-left" data-aos-offset="50" data-aos-duration="2000" className="xl:w-1/2 px-4 xl:px-0">
-        <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="05 FAQ" />
-        <Heading className="text-[48px] lg:font-[900] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]" title="Any Questions for Data science" />
-        <Paragraph title="Nam venenatis vehicula orci, at cursus sapien vestibulum et. Donec suscipit porta turpis non malesuada. In sit amet ex eget turpis molestie tincidunt vel a massa." className="text-[#666F9D] mb-10 md:mb-14 text-[20px] leading-[30px]" />
+        <Button className=" bg-[#FF7A41] mb-6 text-white font-[750] md:font-[850] text-[16px] p-[14px] rounded-[6px]" text="FAQ" />
+        <Heading className="text-[48px] lg:font-[900] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]"
+          title="Any Questions about Mobile App & Web Development?" />
+        <Paragraph
+          title="Have queries about building mobile apps or websites? We specialize in crafting scalable, high-performance solutions tailored to your business needs. Let's explore your questions together!"
+          className="text-[#666F9D] mb-10 md:mb-14 text-[20px] leading-[30px]" />
       </div>
+
       <div className="hidden sm:block absolute sm:bottom-0 sm:left-2 xl:left-auto xl:bottom-auto xl:top-0 xl:right-80 faqImg">
         <img src={Image1} alt="sideimg" />
       </div>

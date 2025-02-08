@@ -56,7 +56,7 @@ export default function Footer() {
                             <div className="w-[45px] h-[45px]  leading-[45px] text-center bg-[#223452] flex justify-center items-center  rounded-[50%]">
                                 <FaLocationDot className="text-[#bdc2cb] " />
                             </div>
-                            <p className="text-[#74787C] font-semibold w-48">1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
+                            <p className="text-[#74787C] font-semibold w-48">Al Rehman Garden Phase 2 Gate No. 4 </p>
                         </div>
                     </div>
                     <div className="flex md:w-1/2 flex-col md:justify-center md:items-center xl:justify-start mx-auto ">
@@ -79,7 +79,7 @@ export default function Footer() {
                         <div>
                             <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
                                 <FaLocationDot className="cursor-pointer w-6 h-6" />
-                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>1791 Yorkshire Circle Kitty Hawk, NC 279499</p>
+                                <p className='w-48 md:w-full md:font-semibold text-[17px] cursor-pointer'>Al Rehman Garden Phase 2 Gate No. 4 </p>
                             </div>
                             <div className="flex items-center justify-start gap-3 mb-5 text-[#74787C] ">
                                 <IoIosTime className="cursor-pointer w-6 h-6" />
@@ -120,11 +120,10 @@ export default function Footer() {
                     <p className="text-[18px] mx-auto text-center lg:text-start font-semibold text-[#000F5C]">@ Copyright 2017 Bibrow Soluton's All Rights Reserved</p>
                 </div>
                 <div className='flex md:w-1/2 capitalize  justify-center items-center text-[#000F5C] text-[16px] font-normal flex-wrap text-right mt-5 gap-6 lg:gap-8 md:pl-16 '>
-                    <p className="font-normal xl:text-lg cursor-pointer">Facebook</p>
-                    <a href="https://twitter.com/UsmanMu53665476" target='_blank' className="font-normal xl:text-lg cursor-pointer">Twitter</a>
-                    <a href="https://www.instagram.com/i_m_um56/" target="_blank" className="font-normal xl:text-lg cursor-pointer">Instagram</a>
-                    <a href="https://www.linkedin.com/in/muhammad-usman-b667072a8/" target="_blank" className="font-normal xl:text-lg cursor-pointer">linkedin</a>
-                    <p className="font-normal xl:text-lg cursor-pointer">Pintrest</p>
+                    <a target='_blank' href='https://www.facebook.com/climaxgamestudios?mibextid=ZbWKwL' className="font-normal xl:text-lg cursor-pointer">Facebook</a>
+                    <a href="https://youtube.com/@climaxgamestudios2285?si=mVXb5S01sO82b6oK" target='_blank' className="font-normal xl:text-lg cursor-pointer">Youtube</a>
+                    <a href="https://www.linkedin.com/company/climax-game-studios/" target="_blank" className="font-normal xl:text-lg cursor-pointer">LinkedIn</a>
+                    <a href="https://www.tiktok.com/@climaxgamestudios" target="_blank" className="font-normal xl:text-lg cursor-pointer">TikTok</a>
                 </div>
             </div>
 

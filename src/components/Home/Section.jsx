@@ -200,11 +200,10 @@ export default function Section() {
           <img src={shape1} alt="" className="absolute top-[100px] left-[100px] absoluteimg " />
         </div>
         <div data-aos="fade-right" data-aos-offset="500" data-aos-duration="1000" className="mt-[2em]  md:mt-[7em] xl:mt-[6em] md:mx-10 xl:ml-60 xl:w-[50%]   mx-5 xl:mx-0">
-          <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="01 provide Best Services" />
-          <Heading className="text-[60px] md:text-[90px] lg:text-[85px] lg:font-[900] xl:text-[90px] lg:leading-[115px] xl:leading-[95px] md:leading-[1.11em] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]" title="Big data will Come up with A Solution" />
-          <Paragraph title="Maecenas tincidunt ex quis arcu ultrices, et commodo diam
-        volutpat. Fusce ligula mauris, sodales" className="text-[#666F9D] mb-10 md:mb-14 text-[20px] leading-[30px] md:w-[34rem]" />
-          <Button text="Start Free Trail" className="text-white text-base font-bold px-7 py-4 bg-[#0d6efd] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
+          <Button className=" bg-[#FF7A41] mb-6 text-white  font-[750] md:font-[850] text-[16px]  p-[14px] rounded-[6px]" text="We provide Best Services" />
+          <Heading className="text-[60px] md:text-[90px] lg:text-[85px] lg:font-[900] xl:text-[90px] lg:leading-[115px] xl:leading-[95px] md:leading-[1.11em] mb-6 font-extrabold leading-[1.4em] text-[#000F5C]" title="Innovative Solutions for a Digital Future" />
+          <Paragraph title="We specialize in game development, app development, and web development, turning ideas into cutting-edge digital solutions. From concept to launch, we craft innovative, high-performance experiences tailored to your needs." className="text-[#666F9D] mb-10 md:mb-14 text-[20px] leading-[30px] md:w-[34rem]" />
+          <Button text="Contact Us" className="text-white text-base font-bold px-7 py-4 bg-[#0d6efd] hover:bg-black cursor-pointer rounded-lg transition-all duration-500" />
 
         </div>
         <div className="hidden xl:block">
