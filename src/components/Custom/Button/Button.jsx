@@ -1,11 +1,7 @@
-import React from 'react'
-
-export default function Button({text,className}) {
+export default function Button({ text, className = "", ...props }) {
   return (
-    <div>
-      <button className={className}>
-        {text}
-      </button>
-    </div>
-  )
+    <button className={className} {...props}>
+      {text}
+    </button>
+  );
 }
