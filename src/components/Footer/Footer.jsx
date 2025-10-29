@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import footerbg from "../../assets/footer-bg.png";
 import { IoIosSend } from "react-icons/io";
@@ -83,6 +84,12 @@ export default function Footer() {
                 <p className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold">
                   About Us
                 </p>
+                <Link
+                  to="/privacy-policy"
+                  className="capitalize text-[#74787C] text-[18px] my-3 leading-normal cursor-pointer font-semibold hover:text-[#0d6efd] transition-all duration-300 block"
+                >
+                  Privacy Policy
+                </Link>
               </div>
             </div>
           </div>
@@ -190,6 +197,12 @@ export default function Footer() {
           >
             Tiktok
           </a>
+          <Link
+            to="/privacy-policy"
+            className="font-normal xl:text-lg cursor-pointer hover:text-[#0d6efd] transition-all duration-300"
+          >
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </div>

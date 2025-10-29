@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose, IoMdMail } from "react-icons/io";
 import "./Navbar.css";
@@ -6,6 +7,8 @@ import Button from "../Custom/Button/Button";
 
 export default function Navbar() {
   const [HamBurger, setHamBurger] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // const closeNavbar = () => {
   //     setHamBurger(false);
@@ -45,13 +48,34 @@ export default function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   // add this helper above your return()
   const scrollToSection = (event, sectionId) => {
     event.preventDefault();
 
-    const target = document.getElementById(sectionId);
-    if (!target) return;
+    // If not on home page, navigate to home first
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const target = document.getElementById(sectionId);
+        if (target) {
+          scrollToElement(target);
+        }
+      }, 100);
+    } else {
+      const target = document.getElementById(sectionId);
+      if (!target) return;
+      scrollToElement(target);
+    }
 
+    // close the mobile menu if it's open
+    if (HamBurger) {
+      handleToggle();
+    }
+  };
+
+  const scrollToElement = (target) => {
     // Respect reduced motion
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -66,11 +90,6 @@ export default function Navbar() {
     const y = absoluteTop - (window.innerHeight / 2 - rect.height / 2);
 
     window.scrollTo({ top: Math.max(0, y), behavior });
-
-    // close the mobile menu if it's open
-    if (HamBurger) {
-      handleToggle();
-    }
   };
 
   return (
@@ -119,9 +138,15 @@ export default function Navbar() {
               </li>
               <li
                 onClick={(event) => scrollToSection(event, "clients")}
-                className="hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black"
+                className="hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black uppercase text-lg"
               >
                 Clients
+              </li>
+              <li
+                onClick={() => navigate("/privacy-policy")}
+                className="hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black uppercase text-lg"
+              >
+                Privacy Policy
               </li>
             </ul>
           </nav>
@@ -197,6 +222,15 @@ export default function Navbar() {
                     className="hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3"
                   >
                     Clients
+                  </li>
+                  <li
+                    onClick={() => {
+                      navigate("/privacy-policy");
+                      handleToggle();
+                    }}
+                    className="hover:text-[#0d6efd] transition-all duration-300 cursor-pointer shadow-black border-b pb-3 px-3"
+                  >
+                    Privacy Policy
                   </li>
                 </ul>
                 <div
