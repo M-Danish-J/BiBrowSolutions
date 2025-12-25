@@ -1558,3 +1558,6 @@ criteo.com, TERO1F, RESELLER, 35d5010d7789b49d
 criteo.com, TVX1JK, RESELLER, 35d5010d7789b49d
 themediagrid.com, TERO1F, RESELLER, 35d5010d7789b49d
 themediagrid.com, TVX1JK, RESELLER, 35d5010d7789b49d
+//Pangle
+pangleglobal.com, 5020183, DIRECT
+pubmatic.com, 161490, RESELLER, 5d62403b186f2ace
