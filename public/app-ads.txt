@@ -306,4 +306,4 @@ webeyemob.com, 80029, RESELLER
 33across.com, 0010b00002MptSLAAZ, RESELLER, bbea06d9c4d2853c
 krushmedia.com, ajxf6R585a9m6Catvk, RESELLER
 //Meta
-facebook.com, 1126468667527069, DIRECT, c3e20eee3f780d68
+
